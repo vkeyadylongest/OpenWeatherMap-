@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Search for a city...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+            <button id="location-btn"><i class="fas fa-location-arrow"></i></button>
+        </div>
+        
+        <div class="weather-container">
+            <div class="current-weather">
+                <div class="weather-info">
+                    <h1 id="city-name">Loading...</h1>
+                    <div id="current-date" class="date"></div>
+                    <div class="temp-container">
+                        <span id="current-temp">--</span>
+                        <span class="unit">°C</span>
+                    </div>
+                    <div id="weather-description">--</div>
+                </div>
+                <div class="weather-icon">
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <div id="details">
+                        <p><i class="fas fa-wind"></i> <span id="wind-speed">--</span> km/h</p>
+                        <p><i class="fas fa-tint"></i> <span id="humidity">--</span>%</p>
+                        <p><i class="fas fa-temperature-high"></i> <span id="feels-like">--</span>°C</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast">
+                <h2>5-Day Forecast</h2>
+                <div id="forecast-container" class="forecast-container"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
